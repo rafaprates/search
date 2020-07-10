@@ -1,0 +1,28 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+ul {    
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-top: 20px;
+    margin-bottom: 150px;
+    margin-right: 20px;
+}
+
+li {
+    font-size: 18px;
+    list-style-type: none;
+    padding: 0px 10px;
+}
+
+li a {
+    text-decoration: none;
+}
+
+li a:hover {
+    text-decoration: underline;
+}

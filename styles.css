@@ -35,14 +35,15 @@ li a:hover {
 }
 
 input[type="text"] {
-    margin: 20px;
+    margin: 30px;
     width: 400px;
     height: 25px;
     border-radius: 100px;
     border-width: thin;
-
+    border-color: lightgrey;
     width: 600px;
     height: 40px;
+    outline: none;
 }
 
 input[type="submit"] {
