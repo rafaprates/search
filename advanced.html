@@ -1,43 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title>Advanced Search</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="stylesAdvanced.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
+
 <body>
-
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Google</a></li>
-                <li><a href="imagens.html">Imagens</a></li>
-            </ul>
-        </nav>
-    </header>
-    
-    <h1>Advanced Search</h1>
-
-    <h2>Find pages with...</h2>
-
     <form action="https://google.com/search">
+    <div class="grid-container">
+        <nav>
+            <a href="index.html"><img src="Google-logo.png" height="30px"></a>
+        </nav>
+        
+        <header>
+            <h1>Advanced Search</h1>
+        </header>
 
-        <label for="allWorld">all these words:</label>
-        <input type="text" name="" id="allWord">
+        <div class="info">
+            
+        </div>
+        
+        <div class="left-col">
+            <label for="allWorld">all these words:</label>
+            <label for="exactWord">this exact word or phrase:</label>
+            <label for="anyWord">any of these words:</label>
+            <label for="noneWord">none of these words:</label>
+        </div>
 
-        <label for="exactWord">this exact word or phrase:</label>
-        <input type="text" name="" id="exactWord">
+        <div class="center-col">
+            <input type="text" name="" id="allWord">
+            <input type="text" name="" id="exactWord">
+            <input type="text" name="" id="anyWord">
+            <input type="text" name="" id="noneWord"><br>
+        </div>
 
-        <label for="anyWord">any of these words:</label>
-        <input type="text" name="" id="anyWord">
+        <div class="right-col">
 
-        <label for="noneWord">none of these words:</label>
-        <input type="text" name="" id="noneWord">
-
+        </div>        
+    </div>
     </form>
 
 
+<!-- 
+    <form action="https://google.com/search">
+
+        <div class="grid-item">
+            <label for="allWorld">all these words:</label>
+            <input type="text" name="" id="allWord">
+        </div>
+
+        <div class="grid-item">
+            <label for="exactWord">this exact word or phrase:</label>
+            <input type="text" name="" id="exactWord">
+        </div>
+
+        <div class="grid-item">
+            <label for="anyWord">any of these words:</label>
+            <input type="text" name="" id="anyWord">
+        </div>
+
+        <div class="grid-item">
+            <label for="noneWord">none of these words:</label>
+            <input type="text" name="" id="noneWord"><br>
+        </div>
+        
+        <input type="submit" value="Advanced Search" class="btn btn-primary">
+    
+     
+    </form>
+-->
 
 
 </body>

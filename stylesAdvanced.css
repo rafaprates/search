@@ -1,28 +1,73 @@
 body {
     box-sizing: border-box;
     margin: 0;
-    padding: 0;
 }
 
-ul {    
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    margin-top: 20px;
-    margin-bottom: 150px;
-    margin-right: 20px;
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
 }
 
-li {
-    font-size: 18px;
-    list-style-type: none;
-    padding: 0px 10px;
+nav {    
+   background-color: silver;
+   height: 8vh;
+   grid-column-start: 1;
+   grid-column-end: 4;
 }
 
-li a {
-    text-decoration: none;
+header {
+    background-color: seagreen;
+    height: 10vh;
+    grid-column-start: 1;
+    grid-column-end: 4;
 }
 
-li a:hover {
-    text-decoration: underline;
+.info {
+    background-color: wheat;
+    height: 8vh;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.left-col {
+    height: 70vh;
+    background-color: springgreen;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.center-col {
+    height: 70vh;
+    background-color: steelblue;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.right-col {
+    height: 70vh;
+    background-color: violet;
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+
+
+
+
+
+
+h1 {
+    color: red;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+
+
+.grid-item {
+}
+
+input[type="text"] {
+    width: 100%;
 }
