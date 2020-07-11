@@ -5,25 +5,34 @@ body {
 
 .grid-container {
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-columns: 200px 2fr 1fr;
+    grid-gap: 10px;
 }
 
 nav {    
-   background-color: silver;
-   height: 8vh;
-   grid-column-start: 1;
-   grid-column-end: 4;
+    display: flex;
+    align-items: center;
+    background-color: rgba(220, 220, 220, 0.5);
+    height: 60px;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    padding-left: 15px;
 }
 
 header {
-    background-color: seagreen;
-    height: 10vh;
+    display: flex;
+    align-items: center;
+    height: 60px;
+    border-bottom: gainsboro;
+    border-bottom-style: solid;
+    border-width: thin;
     grid-column-start: 1;
     grid-column-end: 4;
+    padding-left: 30px;
 }
 
 .info {
-    background-color: wheat;
+    display: flex;
     height: 8vh;
     grid-column-start: 1;
     grid-column-end: 4;
@@ -31,43 +40,63 @@ header {
 
 .left-col {
     height: 70vh;
-    background-color: springgreen;
-    grid-row-start: 4;
-    grid-row-end: 5;
+    /*background-color: springgreen;*/
+    grid-row-start: 3;
+    grid-row-end: 4;
     grid-column-start: 1;
     grid-column-end: 2;
+    display: grid;
+    grid-template-rows: repeat(45, 50px);
+    padding-left: 30px;
+    align-self: center;
 }
 
 .center-col {
     height: 70vh;
-    background-color: steelblue;
+    /*background-color: steelblue;*/
     grid-column-start: 2;
     grid-column-end: 3;
+    align-self: center;
+    display: grid;
+    grid-template-rows: repeat(6, 50px);
+   
 }
 
 .right-col {
     height: 70vh;
-    background-color: violet;
+    /*background-color: violet;*/
     grid-column-start: 3;
     grid-column-end: 4;
+    padding-right: 20px;
+    align-self: center;
+    display: grid;
+    grid-template-rows: repeat(5, 50px);
 }
 
-
-
-
-
-
 h1 {
-    color: red;
+    color: rgb(206, 16, 16);
     font-weight: 500;
     font-size: 20px;
 }
 
+h2 {
+    padding: 5px;
+    margin: 5px;
+    align-self: center;
+    font-size: 14px;
+}
+label, input, p {
+    align-self: center;
+    padding: 5px;
+    font-size: 12px;
+    margin: 5px;
 
-
-.grid-item {
 }
 
 input[type="text"] {
     width: 100%;
+}
+
+input[type="submit"] {
+    float: right;
 }
