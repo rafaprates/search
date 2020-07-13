@@ -67,12 +67,16 @@ footer {
     background-color: gainsboro;
 }
 
-
-
 @media (max-width: 1050px) {
 
     .right-col {
         display: none;
     }
+}
+
+@media (max-width: 350px) {
+    
+    
+
 
 }
