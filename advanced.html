@@ -20,30 +20,27 @@
     </header>
 
     <form action="https://google.com/search">
-        <div class="left-col">
             <h2>Find pages with...</h2>
-            <label for="allWord">all these words:</label>
-            <label for="exactWord">this exact word or phrase:</label>
-            <label for="anyWord">any of these words:</label>
-            <label for="noneWord">none of these words:</label>
-        </div>
-
-        <div class="center-col">
             <h2></h2>
-            <input type="text" name="as_q" id="allWord">
-            <input type="text" name="as_epq" id="exactWord">
-            <input type="text" name="as_oq" id="anyWord">
-            <input type="text" name="as_eq" id="noneWord">
-            <input type="submit" value="Advanced Search" type="button" class="btn btn-primary">
-        </div>
-
-        <div class="right-col">
             <h2>To do this in the search box.</h2>
-            <label for="allWord">Type the important words: tri-colour rat terrier</label>
-            <label for="exactWord">Put exact words in quotes: "rat terrier"</label>
-            <label for="anyWord">Type OR between all the words you want: miniature OR standard</label>
-            <label for="noneWord">Put a minus sign just before words that you don't want: -rodent, -"Jack Russell"</label>
-        </div>        
+
+            <label for="allWord">all these words:</label>
+            <input type="text" name="as_q" id="allWord">
+            <label for="allWord" class="last-col">Type the important words: tri-colour rat terrier</label>
+
+            <label for="exactWord">this exact word or phrase:</label>
+            <input type="text" name="as_epq" id="exactWord">
+            <label for="exactWord" class="last-col">Put exact words in quotes: "rat terrier"</label>
+
+            <label for="anyWord">any of these words:</label>
+            <input type="text" name="as_oq" id="anyWord">
+            <label for="anyWord" class="last-col">Type OR between all the words you want: miniature OR standard</label>
+
+            <label for="noneWord">none of these words:</label>
+            <input type="text" name="as_eq" id="noneWord">
+            <label for="noneWord" class="last-col">Put a minus sign just before words that you don't want: -rodent, -"Jack Russell"</label>
+
+            <input type="submit" value="Advanced Search" type="button" class="btn btn-primary">
     </form>
 
     <footer>
