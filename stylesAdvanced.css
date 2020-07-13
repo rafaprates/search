@@ -3,74 +3,39 @@ body {
     margin: 0;
 }
 
-.grid-container {
-    display: grid;
-    grid-template-columns: 200px 2fr 1fr;
-    grid-gap: 10px;
-}
-
 nav {    
     display: flex;
     align-items: center;
     background-color: rgba(220, 220, 220, 0.5);
     height: 60px;
-    grid-column-start: 1;
-    grid-column-end: 4;
     padding-left: 15px;
 }
 
 header {
     display: flex;
     align-items: center;
-    height: 60px;
-    border-bottom: gainsboro;
-    border-bottom-style: solid;
-    border-width: thin;
-    grid-column-start: 1;
-    grid-column-end: 4;
+    height: 70px;
+    border-bottom: solid thin gainsboro;
+    margin-bottom: 40px;
     padding-left: 30px;
 }
 
-.info {
-    display: flex;
-    height: 8vh;
-    grid-column-start: 1;
-    grid-column-end: 4;
-}
-
-.left-col {
-    height: 70vh;
-    /*background-color: springgreen;*/
-    grid-row-start: 3;
-    grid-row-end: 4;
-    grid-column-start: 1;
-    grid-column-end: 2;
+form {
     display: grid;
-    grid-template-rows: repeat(45, 50px);
-    padding-left: 30px;
-    align-self: center;
+    align-items: center;
+    grid-template-columns: 200px minmax(300px, 600px) 1fr;
+    grid-template-rows: 6;
+    grid-gap: 10px;
 }
 
-.center-col {
-    height: 70vh;
-    /*background-color: steelblue;*/
-    grid-column-start: 2;
-    grid-column-end: 3;
-    align-self: center;
+.left-col, .center-col, .right-col {
     display: grid;
     grid-template-rows: repeat(6, 50px);
-   
+    align-items: center;
 }
 
-.right-col {
-    height: 70vh;
-    /*background-color: violet;*/
-    grid-column-start: 3;
-    grid-column-end: 4;
-    padding-right: 20px;
-    align-self: center;
-    display: grid;
-    grid-template-rows: repeat(5, 50px);
+.left-col{
+    padding-left: 40px;
 }
 
 h1 {
@@ -80,23 +45,34 @@ h1 {
 }
 
 h2 {
+    font-weight: 600;
     padding: 5px;
     margin: 5px;
-    align-self: center;
     font-size: 14px;
 }
+
 label, input, p {
-    align-self: center;
     padding: 5px;
     font-size: 12px;
     margin: 5px;
-
-}
-
-input[type="text"] {
-    width: 100%;
 }
 
 input[type="submit"] {
-    float: right;
+    width: 150px;
+    justify-self: flex-end;
+} 
+
+footer {
+    height: 50px;
+    background-color: gainsboro;
+}
+
+
+
+@media (max-width: 1050px) {
+
+    .right-col {
+        display: none;
+    }
+
 }

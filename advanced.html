@@ -10,19 +10,19 @@
 </head>
 
 <body>
-    <form action="https://google.com/search">
-    <div class="grid-container">
-        <nav>
-            <a href="index.html"><img src="Google-logo.png" height="30px"></a>
-        </nav>
-        
-        <header>
-            <h1>Advanced Search</h1>
-        </header>
+   
+    <nav>
+        <a href="index.html"><img src="Google-logo.png" height="30px"></a>
+    </nav>
+    
+    <header>
+        <h1>Advanced Search</h1>
+    </header>
 
+    <form action="https://google.com/search">
         <div class="left-col">
             <h2>Find pages with...</h2>
-            <label for="allWorld">all these words:</label>
+            <label for="allWord">all these words:</label>
             <label for="exactWord">this exact word or phrase:</label>
             <label for="anyWord">any of these words:</label>
             <label for="noneWord">none of these words:</label>
@@ -30,10 +30,10 @@
 
         <div class="center-col">
             <h2></h2>
-            <input type="text" name="" id="allWord">
-            <input type="text" name="" id="exactWord">
-            <input type="text" name="" id="anyWord">
-            <input type="text" name="" id="noneWord">
+            <input type="text" name="as_q" id="allWord">
+            <input type="text" name="as_epq" id="exactWord">
+            <input type="text" name="as_oq" id="anyWord">
+            <input type="text" name="as_eq" id="noneWord">
             <input type="submit" value="Advanced Search" type="button" class="btn btn-primary">
         </div>
 
@@ -44,8 +44,10 @@
             <p>Type OR between all the words you want: miniature OR standard</p>
             <p>Put a minus sign just before words that you don't want: -rodent, -"Jack Russell"</p>
         </div>        
-    </div>
     </form>
+
+    <footer>
+    </footer>
 
 
 <!-- 
