@@ -24,8 +24,10 @@ form {
     display: grid;
     align-items: center;
     grid-template-columns: 200px minmax(300px, 600px) 1fr;
-    grid-template-rows: 6;
-    grid-gap: 10px;
+    grid-template-rows: repeat(5, 36px) 50px;
+    grid-gap: 5px;
+    height: calc(100vh - 60px - 70px - 60px - 40px); /* Subtracts all boxes other than form */
+    padding-left: 20px;
 }
 
 h1 {
@@ -41,10 +43,16 @@ h2 {
     font-size: 14px;
 }
 
-label, input, p {
+label, input[type="text"], p {
     padding: 5px;
     font-size: 12px;
     margin: 5px;
+}
+
+input[type="text"] {
+    border-radius: 0%;
+    border: solid thin ;
+    border-color: lightslategrey;
 }
 
 input[type="submit"] {
@@ -53,11 +61,19 @@ input[type="submit"] {
 } 
 
 footer {
-    height: 50px;
+    height: 60px;
     background-color: gainsboro;
+    border-top: lightslategrey thin solid;
+}
+
+.foot-sec {
+    background-color: gainsboro;
+    border-bottom: lightslategrey thin solid;
+    height: 30px;
 }
 
 @media (max-width: 1050px) {
+
     form {
         grid-template-columns: 200px minmax(300px, 600px);
     }
@@ -68,16 +84,16 @@ footer {
     }   
 }
 
-@media (max-width: 350px) {
+@media (max-width: 500px) {
  
     form {
         display: grid;
-        grid-template-columns: 300px;
+        grid-template-columns: 60vw;
         grid-auto-rows: 50px;
+        height: 100vh;
     }
 
     form :nth-child(3n) {
         display: none;
-
     }   
 }
