@@ -26,8 +26,8 @@ form {
     grid-template-columns: 200px minmax(300px, 600px) 1fr;
     grid-template-rows: repeat(5, 36px) 50px;
     grid-gap: 5px;
-    height: calc(100vh - 60px - 70px - 60px - 40px); /* Subtracts all boxes other than form */
-    padding-left: 20px;
+    height: calc(100vh - 60px - 70px - 60px - 40px); /* Subtracts all boxes height other than form */
+    padding: 0px 20px;
 }
 
 h1 {
@@ -89,7 +89,8 @@ footer {
     form {
         display: grid;
         grid-template-columns: 60vw;
-        grid-auto-rows: 50px;
+        grid-template-rows: repeat(12, 50px);
+        gap: 0px;
         height: 100vh;
     }
 
